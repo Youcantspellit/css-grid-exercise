@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       body {
+           width: 100vw;
+           height: 100vh;
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           grid-template-rows: 1fr 2fr; 
+       }
+    
+        section {
+            position: relative;
+            background-image: url(girl.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+        section:hover{
+            opacity: 0.8;
+        }
+        .item-3 {
+            grid-column: span 2;
+        }
+        .item-4 {
+            grid-column: span 2;
+        }
+        h1 {
+            position: absolute;
+            display: inline;
+            letter-spacing: 5px;
+            /* line-height: 50px; */
+            right: 15%;
+            top:80%;
+            background: rgba(0, 0, 0, 0.5)
+        }
+
+    </style>
+</head>
+<body>
+    <section class="item-1"><h1>Caption</h1></section>
+    <section class="item-2"><h1>Caption</h1></section>
+    <section class="item-3"><h1>Caption</h1></section>
+    <section class="item-4"><h1>Caption</h1></section>
+    <section class="item-5"><h1>Caption</h1></section>
+    <section class="item-6"><h1>Caption</h1></section>
+
+</body>
+</html>
